@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="/styles.css" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/videos.html">Dancing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="title-page">
+        <h2>Resume</h2>
+      </div>
+      
+      <section class="container">
+        <div class="row">
+          <div class="col ">
+            <img class = "tomb" src="/img/icon_email.png" alt="">
+            <p class="contact-pg">aksjflasjfljsajkfkasf</p>
+          </div>
+          <div class="col">
+            <img class = "tomb" src="/img/icon_phone.png" alt="">
+            <p class="contact-pg">jasdlkfjlaksdjfkljasldkfjlajslkfa</p>
+          </div>
+          <div class="col">
+            <img class ="tomb" src="/img/icon_location.png" alt="">
+            <p class="contact-pg">sfdljasldfjlkajslkfjasljdfs</p>
+          </div>
+        </div>
+      </section>
+      </div>
+
+
+
+  
+
+      <script>
+       document.querySelector(".tomb").onclick = function () {
+         if(document.querySelector(".contact-pg").style.visibility === "hidden")
+         document.querySelector(".contact-pg").style.visibility = "visible";
+         else{
+          document.querySelector(".contact-pg").style.visibility = "hidden"
+         }
+       }
+      </script>
+</body>
+</html>
