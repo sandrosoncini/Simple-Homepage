@@ -1,8 +1,32 @@
 /* index page */
-.body-back {
-    background-image:url("/img/003.jpeg");
-    background-size: 180%;
-    overflow: visible;
+body, html {
+    height: 100%;
+}
+
+.bg{
+  background-image: url("/img/003.jpeg");
+      /* The image used */
+  
+}
+
+.home{
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+}
+.bg-white{
+    opacity: 0.6;
+}
+
+#dancing {
+  height: 400%;
+
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #box-container-img {
@@ -48,9 +72,7 @@
     align-self: flex-end;
 }
 
-.div-res {
-    padding-top: 100px ;
-}
+
 
 .title-page {
     text-align: center;
@@ -67,11 +89,6 @@
 .tomb {
     width: 20%;
     
-}
-.container{
-    margin-block-end: 100px;
-    background-color: rgba(158, 158, 162, 0.427);
-
 }
 
 .contact-pg{
