@@ -31,38 +31,61 @@
         </div>
       </nav>
 
-      <div class="title-page">
-        <h2>Resume</h2>
-      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <section class=" text-center">
+        <div class="container">
+          <h1><button type="button" id="contact-bt" class="btn btn-primary btn-lg btn-block">Contact</button></h1>
+        </div>
+      </section>
+  
       
-      <section class="container">
+      <section id ="show-contact" class="container">
         <div class="row">
           <div class="col ">
             <img class = "tomb" src="/img/icon_email.png" alt="">
-            <p class="contact-pg">aksjflasjfljsajkfkasf</p>
+            <br>
+            <br>
+            <h5 class="contact-pg"> sandrosoncini@gmail.com</h5>
           </div>
           <div class="col">
             <img class = "tomb" src="/img/icon_phone.png" alt="">
-            <p class="contact-pg">jasdlkfjlaksdjfkljasldkfjlajslkfa</p>
+            <br>
+            <br>
+            <h5 class="contact-pg">(604)339-37-51</h5>
           </div>
           <div class="col">
             <img class ="tomb" src="/img/icon_location.png" alt="">
-            <p class="contact-pg">sfdljasldfjlkajslkfjasljdfs</p>
+            <br>
+            <br>
+            <h5 class="contact-pg">Vancouver, BC, Canada.</h5>
+          </div>
+          <div class="row">
+            <div class="col ">
+              <img class = "tomb" src="/img/icon_location.png" alt="">
+              <br>
+              <br>
+              <h5 class="contact-pg"> sandrosoncini@gmail.com</h5>
+            </div>
+            <div class="col ">
+              <img class = "tomb" src="/img/icon_location.png" alt="">
+              <br>
+              <br>
+              <h5 class="contact-pg"> sandrosoncini@gmail.com</h5>
+            </div>
           </div>
         </div>
       </section>
       </div>
 
-
-
-  
-
       <script>
-       document.querySelector(".tomb").onclick = function () {
-         if(document.querySelector(".contact-pg").style.visibility === "hidden")
-         document.querySelector(".contact-pg").style.visibility = "visible";
+       document.querySelector("#contact-bt").onclick = function () {
+         if(document.querySelector("#show-contact").style.visibility === "hidden")
+         document.querySelector("#show-contact").style.visibility = "visible";
          else{
-          document.querySelector(".contact-pg").style.visibility = "hidden"
+          document.querySelector("#show-contact").style.visibility = "hidden"
          }
        }
       </script>
