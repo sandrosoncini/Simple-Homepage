@@ -7,7 +7,8 @@
     <link href="/styles.css" rel="stylesheet">
     <title>Resume</title>
 </head>
-<body>
+<body> 
+ 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,13 +31,69 @@
           </ul>
         </div>
     </nav>
+  </div>
+  
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class=" text-center">
+      <div class="container">
+        <h1>Resume</h1>
+        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <p>
+          <button id ="tech" class="btn btn-info my-2">Technical Skills</button>
+          <button id ="web" class="btn btn-info my-2">Web Projects</button>
 
-    <div class="title-page">
-      <h2>Resume</h2>
+        </p>
+      </div>
+    </section>
+
+    <div class = "resume-grid text-center">
+      <div class = "ts">  
+        <h3>Technical Skills</h3>
+        <ul>
+          <p>FRONT-END: HTML5, CSS, JavaScript, jQuery, Ajax, Bootstrap, React.js</p>
+          <p>DEPLOYMENT / DEVELOPMENT: Heroku, Git, GitHub</p>
+          <p>DATABASE: PostgreSQL, Knex.js, Active Record</p>
+          <p>DEPLOYMENT / DEVELOPMENT: Heroku, Git, GitHub</p>
+          <p>OTHER: Adobe Illustrator , Adobe InDesign</p>
+        </ul>
+      </div>
+      <div class = "wp"> 
+        <h3>Web Projects</h3>
+        <h5>Express Js</h5>
+        <li>SUPER TEAM PICKER - Users can split teams by team number or number of teams.</li> 
+        <li>CLUCKR - Twitter simulator.</li> 
+        <br>
+        <h5>Ruby on RAils</h5>
+        <li>BLOG ON RAILS - Blog app with encouraged user interaction via comments.</li>
+        <li>AMAZING AMAZON - Amazon simulator with products that can be added, reviewed,
+          filtered by tags, and favorited, with reviews voted</li>
+          <br>
+        <h5>React </h5>
+        <li>JAMMING - Using Spotify API, users can search songs and create playlist.</li>
+        <br>
+        <h5>Ruby on Rails and React</h5>
+        <li>BIDS - Ebay simulator, user can auction and bid products.</li>
+        <li>MY GIGS 0(in development) - Search app tool to find musicians, dancers, and artists
+          in general, with support features like booking and payment.</li>
     </div>
+  
+   
+    <script>
+      document.querySelector("#tech").onclick = function () {
+        if(document.querySelector(".ts").style.visibility === "hidden")
+          document.querySelector(".ts").style.visibility = "visible";
+          document.querySelector(".wp").style.visibility = "hidden"
+      }
 
-
-
+      document.querySelector("#web").onclick = function () {
+        if(document.querySelector(".wp").style.visibility === "hidden")
+          document.querySelector(".wp").style.visibility = "visible";
+          document.querySelector(".ts").style.visibility = "hidden"
+      }
+     </script>
  
 
 
